@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: center;
+    height: 100vh;
 }
 
 
@@ -73,7 +74,13 @@ body {
 
 .nav-list {
     list-style-type: none;
-    display: none;
+}
+
+.nav-item {
+    border-top: 2px solid black;
+    padding: .25em 0;
+    margin: 0;
+    width: 100%;
 }
 
 .nav-link {
@@ -88,3 +95,27 @@ body {
 
 
 /* Nav End */
+
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+    .nav-container {
+        display: block;
+        position: fixed;
+        left: 0;
+        border-right: 10px solid gray;
+        width: 40%;
+        overflow-y: scroll;
+        top: 0;
+        bottom: 0;
+    }
+    .nav-item {
+        padding: .75em 0;
+    }
+    #main-doc {
+        width: 60%;
+        position: fixed;
+        right: 0;
+    }
+}
