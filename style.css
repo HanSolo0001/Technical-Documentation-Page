@@ -33,33 +33,52 @@ body {
     font-weight: 700;
 }
 
-#nav-toggle {
-    width: 2.5em;
-    height: 2.5em;
-    background-color: black;
+.mobile-nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #2f6f69;
     color: white;
     transition: opacity 250ms ease;
-    border: 0;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    position: absolute;
+    right: 1.5em;
+    top: 1.2em;
 }
 
-.hamburger::before,
-.hamburger::after {
-    height: 2px;
-    display: block;
-    background: white;
-    width: 20px;
-    margin: 0 auto;
-    position: relative;
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
 }
 
 .hamburger {
     width: 50%;
-    position: absolute;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
 }
 
 .nav-flex {
@@ -74,6 +93,14 @@ body {
 
 .nav-list {
     list-style-type: none;
+    visibility: hidden;
+    display: none;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
 }
 
 .nav-item {
@@ -109,6 +136,14 @@ body {
         overflow-y: scroll;
         top: 0;
         bottom: 0;
+    }
+    .mobile-nav-toggle {
+        visibility: hidden;
+        display: none;
+    }
+    .nav-list {
+        visibility: visible;
+        display: block;
     }
     .nav-item {
         padding: .75em 0;
