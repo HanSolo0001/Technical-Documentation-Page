@@ -13,6 +13,44 @@ body {
     height: 100vh;
 }
 
+#backBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: darkslategray;
+    color: burlywood;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 50%;
+    width: 10%;
+    height: 7%;
+}
+
+#backBtn:hover {
+    opacity: 0.7;
+}
+
+.back_to_top {
+    text-decoration: none;
+    color: burlywood;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.main-section {
+    padding: 1em;
+}
+
+.header-title {
+    padding: 0.50em 0em;
+    background-color: darkslategray;
+    font-weight: 700;
+}
+
 
 /* Nav Start */
 
