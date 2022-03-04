@@ -13,6 +13,12 @@ body {
     height: 100vh;
 }
 
+.page-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
 #backBtn {
     display: none;
     position: fixed;
@@ -49,6 +55,13 @@ body {
     padding: 0.50em 0em;
     background-color: darkslategray;
     font-weight: 700;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: .50em;
 }
 
 
@@ -108,7 +121,6 @@ body {
         left: 0;
         border-right: 10px solid gray;
         width: 30%;
-        overflow-y: scroll;
         top: 0;
         bottom: 0;
     }

@@ -14,124 +14,138 @@
 
 <body>
     <div id="back_to_top"></div>
-    <div class="nav-container">
-        <nav id="navbar" class="nav">
-            <header class="nav-title">HTML Documentation</header>
-            <ul id="nav" class="nav-list nav-flex">
-                <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-                <li class="nav-item"><a class="nav-link" href="#get_started">Get Started</a></li>
-                <li class="nav-item"><a class="nav-link" href="#hello_world">Hello World</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_elements">HTML Elements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_attributes">HTML Attributes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_styles">HTML Styles</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_formatting">HTML Formatting</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_comments">HTML Comments</a></li>
-                <li class="nav-item"><a class="nav-link" href="#html_reference">HTML Reference</a></li>
-            </ul>
-        </nav>
+    <div class="page-container">
+        <div class="nav-container">
+            <nav id="navbar" class="nav">
+                <header class="nav-title">HTML Documentation</header>
+                <ul id="nav" class="nav-list nav-flex">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#get_started">Get Started</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hello_world">Hello World</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_elements">HTML Elements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_attributes">HTML Attributes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_styles">HTML Styles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_formatting">HTML Formatting</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_comments">HTML Comments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html_references">HTML References</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header class="header-title">Introduction</header>
+                <article>
+                    <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
+                    <ul>
+                        <li>the standard markup for creating web pages</li>
+                        <li>the structure of the web page</li>
+                        <li>telling the browser how to display content with the use of elements</li>
+                    </ul>
+                </article>
+                <button onclick="topFunction()" id="backBtn"><a class="back_to_top" href="#back_to_top">&#8963;</a></button>
+            </section>
+            <section class="main-section" id="get_started">
+                <header class="header-title">Get Started</header>
+                <article>
+                    <p>You do not need any previous experience to get started with HTML. All you need is a simple text editor like Notepad, and you can create a very basic website. HTML files have the .html extension attached to them.</p>
+                    <p>There are many text editors out there like Visual Studio Code, a very popular tool for programmers and web developers. These editors are more advanced, have many useful features, and often are free.</p>
+                </article>
+            </section>
+            <section class="main-section" id="hello_world">
+                <header class="header-title">Hello World</header>
+                <article>
+                    <p>Let's create your first website. Open Notepad, and we will create Hello World. Hello World is where a lot of developers start out, regardless of the language their learning. HTML is not a programming language, but a structure language.</p>
+                    <p>To create Hello World, simply type "Hello World." into your Notepad. Then save the file as index.html, or you can name it to whatever you like, as long as .html is in the extension name when you save the file. Index.html is most common
+                        used for the homepage/landing page of a website, but you do not need to do it that way.</p>
+                </article>
+            </section>
+            <section class="main-section" id="html_elements">
+                <header class="header-title">HTML Elements</header>
+                <article>
+                    <p>HTML elements are the tag names and content within those tag names. The following code block is a basic structure of an HTML page. The tag names are between the greater than (>) and less than (
+                        <) symbols. All content put between these tags are part of the HTML element.</p>
+                            <pre>
+                                <code>
+                                    &lt;html&gt;
+                                    &lt;head&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code>
+                            </pre>
+                </article>
+            </section>
+            <section class="main-section" id="html_attributes">
+                <header class="header-title">HTML Attributes</header>
+                <article>
+                    <p>HTML attributes provide additional information about HTML elements. Take the following tag and attribute:</p>
+                    <pre>
+                        <code>
+                            &lt;a href="https://example.com"&gt;&lt;/a&gt;
+                        </code>
+                    </pre>
+                    <p>The a is the anchor tag, and the href is the attribute that links to an address. In this instance, the href points to a website.</p>
+                    <p>Another example is the src attribute on the img tag, as shown below. The src attribute links to where the image is stored (the path), and will then imbed on the page using that link path. Notice the img tag is self closing, so it does
+                        not need the closing &lt;/img&gt; tag.</p>
+                    <pre>
+                        <code>
+                            &lt;img src="https://example.com/img1.jpg"&gt;
+                        </code>
+                    </pre>
+                </article>
+            </section>
+            <section class="main-section" id="html_styles">
+                <header class="header-title">HTML Styles</header>
+                <article>
+                    <p>The HTML styles are imbedded CSS values used to style your webpage. Styles are added by using the &lt;style&gt; tag. The following shows an example on how to imbed a style. The property is a CSS property. The value is a CSS value.</p>
+                    <pre>
+                        <code>
+                            &lt;tagname style="property:value;"&gt; 
+                        </code>
+                    </pre>
+                </article>
+            </section>
+            <section class="main-section" id="html_formatting">
+                <header class="header-title">HTML Formatting</header>
+                <article>
+                    <p>HTML formatting is a way to give text special meaning and style. You can bold, italicize, and underline text with formatting. These are just a few of the formatting options you can do with text.</p>
+                    <pre>
+                        <code>
+                            <p>This is <b>bold</b> text. It is formatted by &lt;b&gt;&lt;/b&gt;.</p>
+                            <p>This is <i>italicized</i> text. It is formatted by &lt;i&gt;&lt;/i&gt;.</p>
+                            <p>This is <u>underlined</u> text. It is formatted by &lt;u&gt;&lt;/u&gt;.</p>
+                        </code>
+                    </pre>
+                </article>
+            </section>
+            <section class="main-section" id="html_comments">
+                <header class="header-title">HTML Comments</header>
+                <article>
+                    <p>HTML comments are comments that you can make in your HTML, that will not show up on the webpage. These are used to help reference and notate important parts or your code. You make a comment by doing the following:</p>
+                    <pre>
+                        <code>
+                            &lt;!-- Write your comments here --&gt;
+                        </code>
+                    </pre>
+                    <P>Remember! Comment are not displayed in the web browser on your page. They are there to document and reference your code.</P>
+                </article>
+            </section>
+            <section class="main-section" id="html_references">
+                <header class="header-title">HTML References</header>
+                <article>
+                    <p>There are several references all over the Internet and YouTube for HTML tutorials. Below are a few of those resources. One of the most popular of the listed links is w3schools.</p>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/default.asp">w3schools.com</a></li>
+                        <li><a href="https://www.tutorialspoint.com/html/index.htm">tutorialspoint.com</a></li>
+                        <li><a href="https://www.learn-html.org/">learn-html.org</a></li>
+                    </ul>
+                    </ul>
+                    </ul>
+                </article>
+            </section>
+        </main>
     </div>
-    <main id="main-doc">
-        <section class="main-section" id="introduction">
-            <header class="header-title">Introduction</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-            <button onclick="topFunction()" id="backBtn"><a class="back_to_top" href="#back_to_top">&#8963;</a></button>
-        </section>
-        <section class="main-section" id="get_started">
-            <header class="header-title">Get Started</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="hello_world">
-            <header class="header-title">Hello World</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_elements">
-            <header class="header-title">HTML Elements</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_attributes">
-            <header class="header-title">HTML Attributes</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_styles">
-            <header class="header-title">HTML Styles</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_formatting">
-            <header class="header-title">HTML Formatting</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_comments">
-            <header class="header-title">HTML Comments</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="html_reference">
-            <header class="header-title">HTML Reference</header>
-            <article>
-                <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
-                <ul>
-                    <li>the standard markup for creating web pages</li>
-                    <li>the structure of the web page</li>
-                    <li>telling the browser how to display content with the use of elements</li>
-                </ul>
-            </article>
-        </section>
-    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="./main.js"></script>
 </body>
