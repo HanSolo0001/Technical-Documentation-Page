@@ -37,9 +37,9 @@
                 <article>
                     <p>This documentation will provide you with some basics of HTML with some references at the end. HTML stands for Hyper Text Markup Language. HTML is used for the following:</p>
                     <ul>
-                        <li>the standard markup for creating web pages</li>
-                        <li>the structure of the web page</li>
-                        <li>telling the browser how to display content with the use of elements</li>
+                        <li class="introduction_content">the standard markup for creating web pages</li>
+                        <li class="introduction_content">the structure of the web page</li>
+                        <li class="introduction_content">telling the browser how to display content with the use of elements</li>
                     </ul>
                 </article>
                 <button onclick="topFunction()" id="backBtn"><a class="back_to_top" href="#back_to_top">&#8963;</a></button>
@@ -64,14 +64,16 @@
                 <article>
                     <p>HTML elements are the tag names and content within those tag names. The following code block is a basic structure of an HTML page. The tag names are between the greater than (>) and less than (
                         <) symbols. All content put between these tags are part of the HTML element.</p>
-                            <pre>
-                                <code>
-&lt;html&gt;
-&lt;head&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                            <pre class="html_elements--pre-container">
+                                <code class="html_elements--code-container">
+<span>&lt;html&gt;</span>
+<span>&lt;head&gt;</span>
+<span>meta and links, <br class="br_head">not on browser</span>
+<span>&lt;/head&gt;</span>
+<span>&lt;body&gt;</span>
+<span>content on browser</span>
+<span>&lt;/body&gt;</span>
+<span>&lt;/html&gt;</span>
                                 </code>
                             </pre>
                 </article>
@@ -80,17 +82,17 @@
                 <header class="header-title">HTML Attributes</header>
                 <article>
                     <p>HTML attributes provide additional information about HTML elements. Take the following tag and attribute:</p>
-                    <pre>
-                        <code>
-&lt;a href="https://example.com"&gt;&lt;/a&gt;
+                    <pre class="html_attributes_a--pre-container">
+                        <code class="html_attributes_a--code-container">
+<p>&lt;a href=<br class="br_a">"https://example.com"&gt;<br class="br_a">&lt;/a&gt;</p>
                         </code>
                     </pre>
                     <p>The a is the anchor tag, and the href is the attribute that links to an address. In this instance, the href points to a website.</p>
                     <p>Another example is the src attribute on the img tag, as shown below. The src attribute links to where the image is stored (the path), and will then imbed on the page using that link path. Notice the img tag is self closing, so it does
                         not need the closing &lt;/img&gt; tag.</p>
-                    <pre>
-                        <code>
-&lt;img src="https://example.com/img1.jpg"&gt;
+                    <pre class="html_attributes_img--pre-container">
+                        <code class="html_attributes_img--code-container">
+<p>&lt;img src=<br class="br_img">"https://example.com/<br class="br_img">img1.jpg"&gt;</p>
                         </code>
                     </pre>
                 </article>
@@ -99,9 +101,9 @@
                 <header class="header-title">HTML Styles</header>
                 <article>
                     <p>The HTML styles are imbedded CSS values used to style your webpage. Styles are added by using the &lt;style&gt; tag. The following shows an example on how to imbed a style. The property is a CSS property. The value is a CSS value.</p>
-                    <pre>
-                        <code>
-&lt;tagname style="property:value;"&gt; 
+                    <pre class="html_styles--pre-container">
+                        <code class="html_styles--code-container">
+<p>&lt;tagname style=<br class="br_styles">"property:value;"<br class="br_styles">&gt;</p>
                         </code>
                     </pre>
                 </article>
@@ -110,11 +112,11 @@
                 <header class="header-title">HTML Formatting</header>
                 <article>
                     <p>HTML formatting is a way to give text special meaning and style. You can bold, italicize, and underline text with formatting. These are just a few of the formatting options you can do with text.</p>
-                    <pre>
-                        <code>
-                            <p>This is <b>bold</b> text. It is formatted by &lt;b&gt;&lt;/b&gt;.</p>
-                            <p>This is <i>italicized</i> text. It is formatted by &lt;i&gt;&lt;/i&gt;.</p>
-                            <p>This is <u>underlined</u> text. It is formatted by &lt;u&gt;&lt;/u&gt;.</p>
+                    <pre class="html_formatting--pre-container">
+                        <code class="html_formatting--code-container">
+                            <p>This is <b>bold</b> text. <br class="br_b">It is formatted by <br class="br_b">&lt;b&gt;&lt;/b&gt;.</p>
+                            <p>This is <i>italicized</i> text. <br class="br_i">It is formatted by <br class="br_i">&lt;i&gt;&lt;/i&gt;.</p>
+                            <p>This is <u>underlined</u> text. <br class="br_u">It is formatted by <br class="br_u">&lt;u&gt;&lt;/u&gt;.</p>
                         </code>
                     </pre>
                 </article>
@@ -123,9 +125,9 @@
                 <header class="header-title">HTML Comments</header>
                 <article>
                     <p>HTML comments are comments that you can make in your HTML, that will not show up on the webpage. These are used to help reference and notate important parts or your code. You make a comment by doing the following:</p>
-                    <pre>
-                        <code>
-                            &lt;!-- Write your comments here --&gt;
+                    <pre class="html_comments--pre-container">
+                        <code class="html_comments--code-container">
+<p>&lt;!-- <br class="br_comments">Write comments here<br class="br_comments"> --&gt;</p>
                         </code>
                     </pre>
                     <P>Remember! Comment are not displayed in the web browser on your page. They are there to document and reference your code.</P>
